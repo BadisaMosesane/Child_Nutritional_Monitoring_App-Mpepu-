@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_weight_for_age"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/title_weight_for_age"/>
+
+    <item
+            android:id="@+id/navigation_weight_for_height"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/title_weight_for_height"/>
+
+    <item
+            android:id="@+id/navigation_height_for_age"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/title_height_for_age"/>
+
+</menu>

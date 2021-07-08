@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="bw.co.ultimateinformatics.mpepuapp">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+            android:name=".helpers.MpepuHelper"
+            android:allowBackup="true"
+            android:fullBackupContent="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+                android:name=".activities.LoginActivity"
+                android:screenOrientation="landscape"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity"/>
+        <activity
+                android:screenOrientation="landscape"
+                android:name=".activities.ChildRegistrationActivity"
+                android:label="@string/title_activity_child_details"
+                android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activities.HomeActivity"/>
+        <activity android:name=".activities.Dashboard"/>
+        <activity
+                android:name=".activities.LogActivity"
+                android:label="@string/title_activity_log"
+                android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="landscape"/>
+        <activity
+                android:name=".activities.AllGraphsActivity"
+                android:screenOrientation="landscape"
+                android:label="@string/title_activity_all_graphs"/>
+        <activity android:name=".activities.NewChildActivity"/>
+    </application>
+
+</manifest>

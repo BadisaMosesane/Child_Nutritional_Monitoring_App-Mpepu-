@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "562590052197",
+    "firebase_url": "https://introtofirebase.firebaseio.com",
+    "project_id": "introtofirebase",
+    "storage_bucket": "introtofirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562590052197:android:7816b020ee51bc01",
+        "android_client_info": {
+          "package_name": "bw.co.ultimateinformatics.mpepuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562590052197-4vcrjkekq61b8qiqk02r8hk2qporj6lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_ur_SeOfqTbwWhwiGJMfBdDMLpKJgGls"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

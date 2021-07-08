@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.LogActivity"
+    tools:showIn="@layout/activity_log">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/regID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtRegID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registration_number"
+            android:inputType="number"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regID"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtCWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/current_weight_kg"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cAge"
+        tools:layout_editor_absoluteY="399dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtCHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/current_height_cm"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:barrierDirection="end"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cHeight"
+        tools:layout_editor_absoluteX="900dp" />
+
+</android.support.constraint.ConstraintLayout>

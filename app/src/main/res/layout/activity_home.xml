@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:contentDescription="@string/todo"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/regID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_white" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/regID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/fName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtRegID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registration_number"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/fName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/lName"
+        app:layout_constraintEnd_toEndOf="@+id/regID"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/regID"
+        app:layout_constraintTop_toBottomOf="@+id/regID">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/lName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/mName"
+        app:layout_constraintEnd_toEndOf="@+id/fName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/fName"
+        app:layout_constraintTop_toBottomOf="@+id/fName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastname" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/faName"
+        app:layout_constraintEnd_toEndOf="@+id/lName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/lName"
+        app:layout_constraintTop_toBottomOf="@+id/lName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtMName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mother_s_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/faName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bWeight"
+        app:layout_constraintEnd_toEndOf="@+id/mName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/mName"
+        app:layout_constraintTop_toBottomOf="@+id/mName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtfaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/father_s_name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bHeight"
+        app:layout_constraintEnd_toEndOf="@+id/faName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/faName"
+        app:layout_constraintTop_toBottomOf="@+id/faName">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtBWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/birth_weight_kg"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cHeight"
+        app:layout_constraintEnd_toEndOf="@+id/bWeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/bWeight"
+        app:layout_constraintTop_toBottomOf="@+id/bWeight">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtbHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/birth_height_cm"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cAge"
+        app:layout_constraintEnd_toEndOf="@+id/bHeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/bHeight"
+        app:layout_constraintTop_toBottomOf="@+id/bHeight">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtCHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/current_height_cm" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/cAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton"
+        app:layout_constraintEnd_toEndOf="@+id/cHeight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/cHeight"
+        app:layout_constraintTop_toBottomOf="@+id/cHeight">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edtCWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/current_weight_kg" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Confirm Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="964dp" />
+</android.support.constraint.ConstraintLayout>
